@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    
+
+    <title>intervietask</title>
+  </head>
+  <body>
+   <div class="main">
+   <h1> Here Filter House For Rent and Sale.</h1>
+   <form method="post" action="">
+        <div>
+            <input type="" id="min" name="min_price"
+                value="<?php echo $min; ?>">
+            <div id="slider-range"></div>
+            <input type="" id="max" name="max_price"
+                value="<?php echo $max; ?>">
+        </div>
+        <div>
+            <input type="submit" name="submit_range"
+                value="Filter Product" class="btn-submit">
+        </div>
+		<select name="make"  id="make">
+				<option value="0">Select Make:</option>
+				<option value="1">For Sale</option>
+				<option value="2">For Rent</option>
+		</select>
+		<button > Load </button><br/><br/>
+	</div>	
+    
+  </body>
+  <script>
+  var sale =[     
+				{ "title": "Modern 1 bhk",
+				  "price": "2000000",
+                  "description": "Nice furnished 1 bhk in the heart of the city"
+				},
+				{
+                  "title": "Nice 2 bhk",
+                  "price": "5000000",
+                  "description": "Nice furnished 2 bhk in the heart of the city"
+				},
+				{
+				  "title": "Spacious furnished 3 bhk",
+				  "price": "9000000",
+				  "description": "Nice furnished 3 bhk at great price"
+				}
+			];
+var rent=[
+			{
+				"title": "compact 1 bhk",
+				"price": "5000",
+				"description": "Nice furnished 1 bhk in the heart of the city"
+			},
+			
+			{
+				"title": "Nice 2 bhk",
+				"price": "10000",
+				"description": "Nice furnished 2 bhk in the heart of the city"
+			},
+
+			{
+				"title": "Spacious furnished 3 bhk",
+				"price": "15000",
+				"description": "Nice furnished 3 bhk at great price"
+			}
+
+         ];
+		 d_SaleArray = [];
+		 g_RentArray = [];
+		  fxnDropDownYear = function () {
+        $.each(g_Vehicle, function (index) {
+            var iYear = sale[index].Year;
+            if ($.inArray(iYear, g_YearsArray) == -1) {
+                g_YearsArray.push(iYear);
+            }
+        });
+  </script>
+</html>
